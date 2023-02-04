@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>主页呐</title>
+   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
+<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+
+<script src="js/vue.js"></script>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsiveslides.css" />
+	<link rel="stylesheet" href="css/responsive.css">
+	
+
+	<link href='./images/logo.jpg' rel='icon' type='image/x-icon'/>
+	<style type="text/css">
+	.RedText {
+	color: #FF0000;
+}
+    .RedText {
+	color: #FF0000;
+}
+    .RedText {
+	color: #FF0000;
+}
+    body {
+	background-color: #E6E6E6;
+}
+    </style>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/responsiveslides.js"></script>
+	<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+	<script>
+$(function () {
+      $("#slider").responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 960,
+        namespace: "centered-btns"
+      });
+    });
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+function MM_effectShake(targetElement)
+{
+	Spry.Effect.DoShake(targetElement);
+}
+
+function MM_effectGrowShrink(targetElement, duration, from, to, toggle, referHeight, growFromCenter)
+{
+	Spry.Effect.DoGrow(targetElement, {duration: duration, from: from, to: to, toggle: toggle, referHeight: referHeight, growCenter: growFromCenter});
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+    </script>
+    
+</head>
+<body id="body" >
+<script type="text/javascript"color="102,51,0" zIndex="-2" opacity="100" count="300" src="js/responsiveslides.js"></script>
+<script type="text/javascript"color="255,131,250" zIndex="-2" opacity="200" count="300" src="js/responsiveslides.js"></script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"> //写诗的</script>
+
+
+<nav>
+	<ul>
+    <!--
+		<li><a href="index.html">首页</a></li>
+		<li><a href="#">文档</a></li>
+		<li><a href="#">首页</a></li>
+		<li><a href="#">首页</a></li>
+		<li><a href="#">首页</a></li>
+        -->
+	</ul>
+</nav>
+
+
+<section id="content">
+	<div class="zerogrid">
+		<div class="row block">
+			
+			<div class="featured col16">
+				<div class="rslides_container" onClick="MM_effectGrowShrink(this, 1000, '100%', '0%', true, false, true)">
+                
+					<ul class="rslides" id="slider">
+						<li><img src="images/1.png"/></li>
+						<li><img src="images/2.png"/></li>
+						<li><img src="images/3.png"/></li>
+						
+				  </ul>
+                  
+				</div>
+			</div>
+			<div class="sidebar col05">
+				<section>
+					<div class="heading">动态Tip</div>
+					<div class="content">
+                    <div id="he-plugin-simple"></div>
+                    <div id="he-plugin-simple"></div>
+                    <p>
+                      <script>
+WIDGET = {
+  "CONFIG": {
+    "modules": "01234",
+    "background": "5",
+    "tmpColor": "000000",
+    "tmpSize": "16",
+    "cityColor": "DD7E6B",
+    "citySize": "16",
+    "aqiColor": "4A86E8",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "fixed": "false",
+    "vertical": "top",
+    "horizontal": "left",
+    "key": "e152760ee63e49a698de8a19ea49d6b9"
+  }
+}
+                      </script>
+                      <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>                     </p>
+                    <hr>
+                    <div id="Websiteannouncement">{{不会真的有人加载不出来吧}}...</div>
+                    <hr>
+                  <span id="jinrishici-sentence">但你看见这行字，证明网站还没加载出来....</span>					</div>
+				</section>
+				<section>
+					<div class="heading">告示牌</div>
+					<div class="content">
+						<ul class="list">
+							<li>Banner是AI画的</li>
+							<li>但你看见某些东西很奇怪，证明网站还没加载完</li>
+							
+				  </ul></div>
+				</section>
+                
+                
+                
+				<section>
+				  <div class="heading">折跃门</div>
+					<div class="content">
+					<ul class="list">
+						<li><a href="https://www.baidu.com/">快速百度（为啥不找旁边的猫）</a></li>
+					  <li><a href="https://cn.bing.com/">快速bing（用百度？你有bing啊）</a></li>
+					  <li><a href="https://www.bilibili.com/">B站 （P小将差不多得了）</a></li>
+					  <li><a href="http://127.0.0.1:7860/">AI绘画（本地部署）</a></li>
+					  <li><a href="https://aitags.fun/">AI绘画（人家的云端）</a></li>
+					  <li><a href="AI/index.html">AI绘画提词器（网上偷的）</a></li>
+					  <li><a href="AI/index.html">AI绘画词条（人家开源的）</a></li>
+					  <li><a href="https://fghdz.github.io/fghdz-Web/">本网站（就是 github 上面的）</a><a href="https://fghdz.github.io/fghdz-Web/"><br>
+				      </a> </li>
+                        <li><a href="https://adzhp.net/">挨打砸货铺（人家的工具网站）</a></li>
+                        <li><a href=" https://ysg123.com/">电影网站合集（人家正经的网站）</a></li>
+					</ul>
+                    
+					</div>
+				</section>
+                
+               
+                
+                
+			
+			</div>
+		
+			<div class="main-content col11">
+				
+				<article>
+					<div class="heading">
+					  <h2>这只猫说可以帮你去百度，不掉毛的哦</h2>
+						<p class="info">快说谢谢猫喵！（摸摸头也行，白嫖的话猫喵会咬你哦！）</p>
+					</div>
+					<div class="content" >
+                    
+                    <div id="mm" onClick="MM_effectShake(this)">
+                    <img src="images/thumb1.png" width="149" height="115"/>
+                    </div>
+						
+						　
+
+
+			          <iframe src="baidu.html" width="100%" height="350px"name="baidu"
+ 
+　　scrolling="No" noresize="noresize" frameborder="0" ></iframe>
+				  </div>
+					<div class="footer">
+						<p class="more"><a href="#" class="button" onClick="MM_popupMsg('您的设备已到达最佳状态！\r(所有页面已经清理干净！)');MM_showHideLayers('body','','hide')">页面卡顿？点击清理>></a></p>
+					</div>
+				</article>
+                
+                
+				<article>
+					<div class="heading">
+						<h2>个人介绍</h2>
+						<p class="info">和简介差不多啦</p>
+				  </div>
+					<div class="content">
+						<p><img src="images/logo.jpg" width="96" height="96" onClick="MM_effectGrowShrink(this, 1000, '100%', '0%', true, false, true)"/>一名佛系UP主，喜欢搞一下小软件，小工具，点赞投币收藏请随意，无所谓的</p>
+						<p>偶尔水一下视频</p>
+					</div>
+					<div class="footer">
+						<p class="more"><a class="button" href="https://space.bilibili.com/73398951">前往B站主页>></a></p>
+					</div>
+				</article>
+                
+                
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+<footer></footer>
+
+<div id="copyright">
+  <p>BiliBili@发光耗电z</p>
+</div>
+
+</body></html>
+
+
+<script type="text/javascript" src="js/WebsiteAnnouncement.js">
+
+
+</script>

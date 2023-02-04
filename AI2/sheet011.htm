@@ -1,0 +1,230 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../novelAI词汇%20tag.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:等线;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(10);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../novelAI词汇%20tag.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#0563C1" vlink="#954F72">
+
+<table border=0 cellpadding=0 cellspacing=0 width=2088 style='border-collapse:
+ collapse;table-layout:fixed;width:1566pt'>
+ <col width=72 span=29 style='width:54pt'>
+ <tr height=18 style='mso-height-source:userset;height:13.9pt'>
+  <td colspan=8 rowspan=3 height=56 class=xl66 width=576 style='height:42.4pt;
+  width:432pt'>Prompt:这里填你对于图片的tag描述，可以空格隔开，建议在生成时加上 masterpiece
+  标签，会明显提升出片质量<br>
+    </td>
+  <td colspan=12 rowspan=23 class=xl727 width=864 style='width:648pt'>补充：<br>
+    <font class="font6">1.影响处理速度的参数</font><font class="font0"><br>
+    采样步数（step），越多越慢<br>
+    图片大小，大尺寸图片显著慢速<br>
+    采样方式，有几个采样明显慢于其他采样<br>
+    tag数量，数量越多时间越长<br>
+    </font><font class="font6">2.影响处理结果的参数</font><font class="font0"><br>
+    tag，AI越熟练的tag，生成的图像完成的越高，反之则越抽象<br>
+   
+  采样步数，越高的步数图像越精细。注意是精细而不是好看，因为如果处理方向不对图只会越来越抽象，因此步数高是有效果，但不是完全的正相关，而且简单tag时高到一定程度时效果就不明显了<br>
+    采样方法：请看我评论区另发的图片<br>
+   
+  CFG规模：通过控制变量对比得知，随着数值的增大，生成画面：1）画面逐渐明亮；2）色彩逐渐鲜艳；3）层次逐渐丰富；4）风格逐渐多样化。但是该数值超过20时，画面出现类似过曝的现象，色彩溢出明显，线条出现问题。经过反复的调整，该数值通常在5-15范围较合适。<br>
+    </font><font class="font6">3.真实图片转动漫</font><font class="font0"><br>
+    使用img2img生成，打上“illustration”tag，使用采样方式“DPM2 a”<br>
+    最好加上人类的tag，比如“girl”<br>
+    CFG越低，图片越接近原图的构局，cfg越高，构图越自由<br>
+    去噪强度（Denoising
+  strength）越低，原图融合度越高，低于0.5时明显能看到原图的涂抹，高于0.75已经与原图关系不大，因此在0.5-0.7范围内较为适合</font></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 colspan=9 style='height:14.25pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td colspan=9 rowspan=18 height=342 class=xl726 style='height:256.5pt'>这里是抄的某个不能提的网址大佬的教程，感谢两位大佬</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td colspan=8 rowspan=3 height=57 class=xl66 width=576 style='height:42.75pt;
+  width:432pt'>采样步数：这个指的是ai进行多少次模拟整合，次数越多生成图片的效果越好，但计算时间也会成正比增加，默认给的20一般就够用。作为参考，我的移动端1650ti在全默认参数，3tag情况下差不多5.2s采样一次<br>
+    采样模型，默认的欧拉遗传（Euler a）就不错<br>
+    </td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td colspan=8 rowspan=3 height=57 class=xl66 width=576 style='height:42.75pt;
+  width:432pt'>宽，高：没啥说的，就是图片分辨率，但是注意较大的分辨率会极大程度的延长计算时间。<br>
+    </td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td colspan=8 rowspan=3 height=57 class=xl66 width=576 style='height:42.75pt;
+  width:432pt'>脸部修复：开了这个选项会让ai更加精细与对脸部的描绘，但是我和我的友友在使用脸部修复的过程中，均发现这会使图片的颜色变得很奇怪，请酌情开启<br>
+    </td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td colspan=8 rowspan=3 height=57 class=xl66 width=576 style='height:42.75pt;
+  width:432pt'>CFG规模：这个代表的是ai对于你的描绘词的拟合程度，但是过大和过小都会出很奇怪的图片，普遍建议7-12</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl67 width=72 style='height:14.25pt;width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl67 width=72 style='height:14.25pt;width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl67 width=72 style='height:14.25pt;width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl67 width=72 style='height:14.25pt;width:54pt'></td>
+  <td colspan=6 rowspan=4 class=xl66 width=432 style='width:324pt'>生成图片时候，step28以上，cfg
+  scale填11</td>
+  <td class=xl67 width=72 style='width:54pt'></td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 style='height:14.25pt'></td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 style='height:14.25pt'></td>
+  <td></td>
+  <td colspan=9 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 style='height:14.25pt'></td>
+  <td></td>
+  <td colspan=9 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 colspan=8 style='height:14.25pt;mso-ignore:colspan'></td>
+  <td colspan=9 style='mso-ignore:colspan'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
